@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Phone, Clock } from "lucide-react";
+import { MapPin, Phone, Clock, Mail } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -159,6 +159,20 @@ const Contact = () => {
                         <h3 className="font-semibold text-foreground">Phone</h3>
                         <p className="text-sm text-muted-foreground">
                           09031290387
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+               {/*Email Placeholder  */}
+                <Card>
+                  <CardContent className="pt-6">
+                    <div className="flex items-start space-x-4">
+                      <Mail className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                      <div className="space-y-1">
+                        <h3 className="font-semibold text-foreground">Email</h3>
+                        <p className="text-sm text-muted-foreground">
+                          dnetwise@gmail.com
                         </p>
                       </div>
                     </div>
